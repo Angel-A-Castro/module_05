@@ -1,23 +1,14 @@
-# Add values
-# Use the AMI of the custom Ec2 image you previously created
-imageid                = ""
-# Use t2.micro for the AWS Free Tier
-instance-type          = "t2.micro"
-key-name               = ""
-vpc_security_group_ids = ""
-tag-name               = ""
-user-sns-topic         = ""
-elb-name               = ""
-tg-name                = ""
-asg-name               = ""
-desired                = 3
-min                    = 2
-max                    = 5
-number-of-azs          = 3
-region                 = ""
-raw-s3-bucket          = ""
-finished-s3-bucket     = ""
-dbname                 = ""
-snapshot_identifier    = ""
-sqs-name               = ""
-username               = ""
+region = "us-east-2"
+
+access_key = "AKIAT6GW2XECJKFSQY72"
+secret_key = "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"
+
+vpc_cidr     = "10.0.0.0/16"
+subnet1_cidr = "10.0.1.0/24"
+subnet2_cidr = "10.0.2.0/24"
+
+snapshot_identifier = "coursera-snapshot"
+
+ami_id = "YOUR_MODULE04_AMI"
+
+key_name = "vockey"
