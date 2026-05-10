@@ -10,7 +10,17 @@
 # map (or object): a group of values identified by named labels, like {name = "Mabel", age = 52}.
 
 # Default types are stings, lists, and maps
+variable "region" {}
+variable "access_key" {}
+variable "secret_key" {}
 
+variable "vpc_cidr" {}
+variable "subnet1_cidr" {}
+variable "subnet2_cidr" {}
+
+variable "snapshot_identifier" {}
+variable "ami_id" {}
+variable "key_name" {}
 variable "imageid" {}
 variable "instance-type" {}
 variable "key-name" {}
